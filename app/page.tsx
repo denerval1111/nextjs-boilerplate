@@ -1,7 +1,18 @@
 import React from 'react';
 import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
 
 export default function HomePage() {
+  return (
+    <>
+      <Header />
+      <HeroSection />
+      <main className="pb-16">
+        {/* Outras seções serão adicionadas aqui */}
+      </main>
+    </>
+  );
+}
   return (
     <>
       <Header />
