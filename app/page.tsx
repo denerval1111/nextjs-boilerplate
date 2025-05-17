@@ -1,14 +1,23 @@
 import React from 'react';
 import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
+// Comente temporariamente a importação do HeroSection para testar
+// import HeroSection from '../components/HeroSection';
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <HeroSection />
+      {/* Comente temporariamente o HeroSection */}
+      {/* <HeroSection /> */}
       <main className="pb-16">
-        {/* Outras seções serão adicionadas aqui */}
+        <div className="container-custom mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold mb-6 text-verde-vitalidade">
+            Envelheça com Vitalidade: Transforme sua Saúde em 30 Dias
+          </h1>
+          <p className="text-xl mb-8">
+            Um programa multidisciplinar baseado em ciência para longevidade saudável
+          </p>
+        </div>
       </main>
     </>
   );
