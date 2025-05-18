@@ -8,25 +8,25 @@ export default function PillarsSection() {
       title: "Medicina Regenerativa",
       description: "Abordagens não intervencionistas para estimular a regeneração celular, focando em autofagia, telômeros e células-tronco.",
       link: "/pilares/medicina-regenerativa",
-      image: "/images/pillar-medicina-regenerativa.jpg"
+      image: "/images/placeholder_nature_minimalist.jpeg"
     },
     {
       title: "Nutrologia",
       description: "Protocolos nutricionais baseados nas culinárias mediterrânea e asiática, otimizando seu metabolismo com suplementação personalizada.",
       link: "/pilares/nutrologia",
-      image: "/images/pillar-nutrologia.jpg"
+      image: "/images/placeholder_healthy_food_minimalist.jpeg"
     },
     {
       title: "Saúde Mental",
       description: "Técnicas de motivação e enfrentamento da ansiedade, procrastinação e sintomas depressivos relacionados ao estresse moderno.",
       link: "/pilares/saude-mental",
-      image: "/images/pillar-saude-mental.jpg"
+      image: "/images/placeholder_meditation_minimalist.jpeg"
     },
     {
       title: "Gerenciamento de Peso",
       description: "Estratégias para emagrecer sem sofrimento, integrando nutrição, atividade física e abordagens comportamentais.",
       link: "/pilares/gerenciamento-peso",
-      image: "/images/pillar-gerenciamento-peso.jpg"
+      image: "/images/placeholder_yoga_flatlay.jpeg"
     }
   ];
 
@@ -46,10 +46,13 @@ export default function PillarsSection() {
           {pillars.map((pillar, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg">
               <div className="relative h-48">
-                <div className="bg-verde-vitalidade/20 h-full w-full flex items-center justify-center">
-                  {/* Placeholder para imagem */}
-                  <div className="text-verde-vitalidade text-5xl font-light">{pillar.title.charAt(0)}</div>
-                </div>
+                <Image
+                  src={pillar.image}
+                  alt={pillar.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="transition-transform hover:scale-105"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-3 text-verde-vitalidade">
