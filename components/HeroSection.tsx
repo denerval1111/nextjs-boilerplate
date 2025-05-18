@@ -1,20 +1,20 @@
 import React from 'react';
 
 interface HeroSectionProps {
-  title: string;
-  subtitle: string;
-  ctaText: string;
-  ctaLink: string;
+  title?: string;
+  subtitle?: string;
+  ctaText?: string;
+  ctaLink?: string;
   secondaryCtaText?: string;
   secondaryCtaLink?: string;
   backgroundImage?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  title,
-  subtitle,
-  ctaText,
-  ctaLink,
+  title = "Envelheça com Vitalidade: Transforme sua Saúde em 30 Dias",
+  subtitle = "Um programa multidisciplinar baseado em ciência para longevidade saudável",
+  ctaText = "Inscreva-se Agora",
+  ctaLink = "/inscricao",
   secondaryCtaText,
   secondaryCtaLink,
   backgroundImage = "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&auto=format&fit=crop", // URL externa padrão
