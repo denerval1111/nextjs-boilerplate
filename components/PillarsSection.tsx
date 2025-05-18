@@ -8,25 +8,25 @@ export default function PillarsSection() {
       title: "Medicina Regenerativa",
       description: "Abordagens não intervencionistas para estimular a regeneração celular, focando em autofagia, telômeros e células-tronco.",
       link: "/pilares/medicina-regenerativa",
-      image: "/images/placeholder_nature_minimalist.jpeg"
+      image: "/images/hero-background.jpg" // Usando imagem que sabemos que existe
     },
     {
       title: "Nutrologia",
       description: "Protocolos nutricionais baseados nas culinárias mediterrânea e asiática, otimizando seu metabolismo com suplementação personalizada.",
       link: "/pilares/nutrologia",
-      image: "/images/placeholder_healthy_food_minimalist.jpeg"
+      image: "/images/testimonial_1.jpg" // Usando imagem que sabemos que existe
     },
     {
       title: "Saúde Mental",
       description: "Técnicas de motivação e enfrentamento da ansiedade, procrastinação e sintomas depressivos relacionados ao estresse moderno.",
       link: "/pilares/saude-mental",
-      image: "/images/placeholder_meditation_minimalist.jpeg"
+      image: "/images/testimonial_2.jpg" // Usando imagem que sabemos que existe
     },
     {
       title: "Gerenciamento de Peso",
       description: "Estratégias para emagrecer sem sofrimento, integrando nutrição, atividade física e abordagens comportamentais.",
       link: "/pilares/gerenciamento-peso",
-      image: "/images/placeholder_yoga_flatlay.jpeg"
+      image: "/images/testimonial_3.jpg" // Usando imagem que sabemos que existe
     }
   ];
 
@@ -73,7 +73,7 @@ export default function PillarsSection() {
                 <Link href={pillar.link} className="text-verde-vitalidade font-medium hover:underline inline-flex items-center">
                   Saiba mais
                   {/* Ajuste no tamanho do SVG da seta */}
-                  <svg className="w-4 h-4 ml-1" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-4 h-4 ml-1 arrow-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
                 </Link>
