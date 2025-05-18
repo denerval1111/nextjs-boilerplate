@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
