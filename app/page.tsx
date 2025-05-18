@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
+import PillarsSection from '../components/PillarsSection';
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <BenefitsSection />
-      <main>
-        {/* Outras seções serão adicionadas aqui */}
-      </main>
+      <PillarsSection />
     </>
   );
 }
