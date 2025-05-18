@@ -46,23 +46,22 @@ export default function PillarsSection() {
           {pillars.map((pillar, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg">
               <div className="relative h-48">
-                {/* Fallback para caso a imagem não carregue */}
+                {/* Fallback sempre visível, ficará atrás da imagem */}
                 <div className="absolute inset-0 bg-verde-vitalidade/20 flex items-center justify-center">
                   <div className="text-verde-vitalidade text-5xl font-light">{pillar.title.charAt(0)}</div>
                 </div>
                 
-                {/* Imagem com tratamento de erro */}
-                <Image
-                  src={pillar.image}
-                  alt={pillar.title}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  className="transition-transform hover:scale-105"
-                  onError={(e) => {
-                    // Quando a imagem falha, mantém o fallback visível
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+                {/* Imagem sem manipulador de eventos onError */}
+                <div className="absolute inset-0">
+                  <Image
+                    src={pillar.image}
+                    alt={pillar.title}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="transition-transform hover:scale-105"
+                    priority={index < 2} // Prioriza o carregamento das duas primeiras imagens
+                  />
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-3 text-verde-vitalidade">
