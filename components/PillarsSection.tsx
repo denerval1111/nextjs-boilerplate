@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function PillarsSection() {
   const pillars = [
@@ -51,17 +50,12 @@ export default function PillarsSection() {
                   <div className="text-verde-vitalidade text-5xl font-light">{pillar.title.charAt(0)}</div>
                 </div>
                 
-                {/* Imagem sem manipulador de eventos onError */}
-                <div className="absolute inset-0">
-                  <Image
-                    src={pillar.image}
-                    alt={pillar.title}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    className="transition-transform hover:scale-105"
-                    priority={index < 2} // Prioriza o carregamento das duas primeiras imagens
-                  />
-                </div>
+                {/* Usando tag img comum em vez do componente Image do Next.js */}
+                <img
+                  src={pillar.image}
+                  alt={pillar.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform hover:scale-105"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-3 text-verde-vitalidade">
@@ -72,8 +66,14 @@ export default function PillarsSection() {
                 </p>
                 <Link href={pillar.link} className="text-verde-vitalidade font-medium hover:underline inline-flex items-center">
                   Saiba mais
-                  {/* Ajuste no tamanho do SVG da seta */}
-                  <svg className="w-4 h-4 ml-1 arrow-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  {/* SVG com estilo inline para controlar o tamanho */}
+                  <svg 
+                    style={{ width: '16px', height: '16px', maxWidth: '16px', maxHeight: '16px', marginLeft: '4px' }} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24" 
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
                 </Link>
