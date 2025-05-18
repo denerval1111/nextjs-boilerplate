@@ -69,19 +69,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <h1 style={{ 
               fontSize: '2.5rem', 
               fontWeight: 'bold', 
-              marginBottom: '1rem',
-              '@media (min-width: 768px)': {
-                fontSize: '3.5rem'
-              }
+              marginBottom: '1rem'
             }}>
               {title}
             </h1>
             <p style={{ 
               fontSize: '1.25rem', 
-              marginBottom: '2rem',
-              '@media (min-width: 768px)': {
-                fontSize: '1.5rem'
-              }
+              marginBottom: '2rem'
             }}>
               {subtitle}
             </p>
@@ -89,11 +83,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               display: 'flex', 
               flexDirection: 'column', 
               gap: '1rem',
-              alignItems: 'center',
-              '@media (min-width: 640px)': {
-                flexDirection: 'row',
-                justifyContent: 'center'
-              }
+              alignItems: 'center'
             }}>
               <a 
                 href={ctaLink} 
