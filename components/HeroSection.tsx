@@ -24,23 +24,25 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   
   return (
     <section 
-      className="relative min-h-[80vh] flex items-center"
+      className="w-full h-screen relative flex items-center justify-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        minHeight: '500px', // Altura mínima para garantir visibilidade em telas pequenas
+        width: '100%'
       }}
     >
-      <div className="container-custom relative z-10">
-        <div className="max-w-2xl text-white">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-2xl mx-auto text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">
             {title}
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-slideUp">
             {subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={ctaLink} className="btn-primary text-center">
               {ctaText}
             </a>
