@@ -46,12 +46,22 @@ export default function PillarsSection() {
           {pillars.map((pillar, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg">
               <div className="relative h-48">
+                {/* Fallback para caso a imagem não carregue */}
+                <div className="absolute inset-0 bg-verde-vitalidade/20 flex items-center justify-center">
+                  <div className="text-verde-vitalidade text-5xl font-light">{pillar.title.charAt(0)}</div>
+                </div>
+                
+                {/* Imagem com tratamento de erro */}
                 <Image
                   src={pillar.image}
                   alt={pillar.title}
                   fill
                   style={{ objectFit: 'cover' }}
                   className="transition-transform hover:scale-105"
+                  onError={(e) => {
+                    // Quando a imagem falha, mantém o fallback visível
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
               </div>
               <div className="p-6">
@@ -63,7 +73,8 @@ export default function PillarsSection() {
                 </p>
                 <Link href={pillar.link} className="text-verde-vitalidade font-medium hover:underline inline-flex items-center">
                   Saiba mais
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  {/* Ajuste no tamanho do SVG da seta */}
+                  <svg className="w-4 h-4 ml-1" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
                 </Link>
