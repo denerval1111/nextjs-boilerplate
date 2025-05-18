@@ -7,25 +7,25 @@ export default function PillarsSection() {
       title: "Medicina Regenerativa",
       description: "Abordagens não intervencionistas para estimular a regeneração celular, focando em autofagia, telômeros e células-tronco.",
       link: "/pilares/medicina-regenerativa",
-      image: "/images/hero-background.jpg" // Usando imagem que sabemos que existe
+      image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&auto=format&fit=crop"
     },
     {
       title: "Nutrologia",
       description: "Protocolos nutricionais baseados nas culinárias mediterrânea e asiática, otimizando seu metabolismo com suplementação personalizada.",
       link: "/pilares/nutrologia",
-      image: "/images/testimonial_1.jpg" // Usando imagem que sabemos que existe
+      image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop"
     },
     {
       title: "Saúde Mental",
       description: "Técnicas de motivação e enfrentamento da ansiedade, procrastinação e sintomas depressivos relacionados ao estresse moderno.",
       link: "/pilares/saude-mental",
-      image: "/images/testimonial_2.jpg" // Usando imagem que sabemos que existe
+      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop"
     },
     {
       title: "Gerenciamento de Peso",
       description: "Estratégias para emagrecer sem sofrimento, integrando nutrição, atividade física e abordagens comportamentais.",
       link: "/pilares/gerenciamento-peso",
-      image: "/images/testimonial_3.jpg" // Usando imagem que sabemos que existe
+      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&auto=format&fit=crop"
     }
   ];
 
@@ -50,11 +50,12 @@ export default function PillarsSection() {
                   <div className="text-verde-vitalidade text-5xl font-light">{pillar.title.charAt(0)}</div>
                 </div>
                 
-                {/* Usando tag img comum em vez do componente Image do Next.js */}
+                {/* Usando tag img comum com URL absoluta externa */}
                 <img
                   src={pillar.image}
                   alt={pillar.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform hover:scale-105"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
