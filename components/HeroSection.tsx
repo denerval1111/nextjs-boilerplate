@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,13 +7,15 @@ export default function HeroSection() {
     <section className="relative min-h-[600px] flex items-center text-white overflow-hidden">
       {/* Imagem de fundo com overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero-background.jpg" 
-          alt="Desafio Vitalidade - Transforme sua saúde"
-          fill
-          style={{ objectFit: 'cover' }}
-          priority
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/hero-background.jpg" 
+            alt="Desafio Vitalidade - Transforme sua saúde"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-verde-vitalidade/70"></div>
       </div>
       
