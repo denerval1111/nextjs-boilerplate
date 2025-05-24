@@ -63,15 +63,25 @@
   }
 }
 
-/* Regras para eliminar a margem branca */
+/* No arquivo responsive.css, adicione ou modifique: */
 .hero-section {
-  margin-bottom: -2px !important;
-  padding-bottom: 0 !important;
+  position: relative;
+  background-color: #333333; /* Cor escura que combina com a borda da imagem */
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Altura da "ponte" entre as seções */
+  background-color: #333333; /* Mesma cor da borda da imagem */
+  z-index: 10;
 }
 
 .benefits-section {
-  margin-top: -2px !important;
-  padding-top: 0 !important;
+  background-color: #ffffff;
   position: relative;
   z-index: 5;
 }
