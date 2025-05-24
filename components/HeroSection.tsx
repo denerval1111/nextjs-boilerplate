@@ -27,7 +27,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   margin: 0, 
   padding: 0,
   backgroundColor: '#333333' /* Cor que combina com a borda da imagem */
-}}>
+}}
+    >
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
         <div 
           style={{
