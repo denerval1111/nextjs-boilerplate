@@ -189,3 +189,25 @@ header:nth-of-type(2) {
   position: absolute !important;
   z-index: -9999 !important;
 }
+
+/* Adicione estas regras ao final do arquivo responsive.css */
+.hero-section {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.benefits-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Força a remoção de qualquer espaço entre seções */
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Elimina qualquer espaço em branco entre elementos */
+body {
+  overflow-x: hidden;
+}
