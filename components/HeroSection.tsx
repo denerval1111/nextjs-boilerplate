@@ -34,6 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           margin: 0,
           padding: 0,
           overflow: 'hidden'
+          marginBottom: '-1px' /* Elimina qualquer gap entre seções */
         }}
       >
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
