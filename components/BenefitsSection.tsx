@@ -46,7 +46,7 @@ export default function BenefitsSection() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {benefits.map((benefit, index) => (
+          {benefits.map((benefit, index ) => (
             <div 
               key={index} 
               className="rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-102 flex flex-col h-full"
