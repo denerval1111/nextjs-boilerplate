@@ -23,20 +23,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   const bgImage = backgroundImage || "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&auto=format&fit=crop";
   
   return (
-    <div className="hero-section w-full relative" style={{ margin: 0, padding: 0 }}>
-      {/* Container externo com altura fixa */}
-      <div 
-        style={{
-          position: 'relative',
-          width: '100%',
-          height: '100vh',
-          minHeight: '600px',
-          margin: 0,
-          padding: 0,
-          overflow: 'hidden',
-          marginBottom: '-2px' /* Elimina qualquer gap entre seções */
-        }}
-      >
+  <div className="hero-section w-full relative" style={{ 
+  margin: 0, 
+  padding: 0,
+  backgroundColor: '#333333' /* Cor que combina com a borda da imagem */
+}}>
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
         <div 
           style={{
