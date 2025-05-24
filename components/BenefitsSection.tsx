@@ -2,12 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function BenefitsSection() {
-  const benefits = [
-    {
-      title: "Abordagem Multidisciplinar",
-      description: "Combinamos medicina regenerativa, nutrologia e saúde mental para uma transformação completa.",
-      icon: "/images/icon-multidisciplinar.svg"
-    },
+ const benefits = [
+  {
+    title: "Abordagem Multidisciplinar",
+    description: "Combinamos medicina regenerativa, nutrologia e saúde mental para uma transformação completa.",
+    extendedDescription: "Nossa abordagem integra diferentes especialidades médicas para tratar o corpo como um todo. Combinamos o melhor da medicina regenerativa para otimizar funções celulares, nutrologia para adequar sua alimentação às necessidades metabólicas, e saúde mental para garantir equilíbrio emocional durante o processo de transformação.",
+    icon: "/images/icon-multidisciplinar.svg",
+    bgImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop"
+  },
+  // Outros benefícios com estrutura similar
+];
     {
       title: "Baseado em Ciência",
       description: "Protocolos fundamentados em pesquisas científicas recentes sobre longevidade e bem-estar.",
