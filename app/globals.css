@@ -199,3 +199,54 @@ svg {
   margin-left: 4px !important;
 }
 
+/* Adicione isto ao arquivo globals.css */
+
+/* Reset global para remover margens e paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Força a remoção de margens entre todas as seções */
+section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Adicione isto ao arquivo globals.css */
+
+/* Reset global para remover margens e paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Força a remoção de margens entre todas as seções */
+section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Solução específica para a margem branca */
+.hero-section + .benefits-section,
+section + section {
+  margin-top: -10px !important; /* Valor negativo maior para garantir sobreposição */
+}
+
+/* Adiciona uma borda inferior na cor da imagem */
+.hero-section {
+  border-bottom: 10px solid #333333 !important;
+}
+
+/* Adiciona uma borda superior na cor da seção de benefícios */
+.benefits-section {
+  border-top: 10px solid #333333 !important;
+  padding-top: 16px !important;
+}
+
