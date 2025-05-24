@@ -25,18 +25,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
   <div className="w-full relative" style={{ margin: 0, padding: 0 }}>
   {/* Container externo com altura fixa */}
-  <div 
-    style={{
-      position: 'relative',
-      width: '100%',
-      height: '100vh',
-      minHeight: '600px',
-      margin: 0,
-      padding: 0,
-      overflow: 'hidden', // Vírgula aqui é essencial
-      marginBottom: '-5px' // Valor mais agressivo para garantir que não haja espaço
-    }}
-  >
+ <div 
+  style={{
+    position: 'relative',
+    width: '100%',
+    height: '100vh',
+    minHeight: '600px',
+    margin: 0,
+    padding: 0,
+    overflow: 'hidden'
+  }}
+>
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
         <div 
           style={{
