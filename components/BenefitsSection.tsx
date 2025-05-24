@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+<section className="bg-white" style={{ marginTop: '-2px' }}>
 
 export default function BenefitsSection( ) {
   const benefits = [
