@@ -23,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   const bgImage = backgroundImage || "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&auto=format&fit=crop";
   
   return (
-  <div className="w-full relative" style={{ margin: 0, padding: 0 }}>
+  <div className="hero-section w-full relative" style={{ margin: 0, padding: 0 }}>
   {/* Container externo com altura fixa */}
  <div 
   style={{
