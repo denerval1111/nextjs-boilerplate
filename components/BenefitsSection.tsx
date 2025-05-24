@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function BenefitsSection( ) {
+export default function BenefitsSection() {
   const benefits = [
     {
       title: "Abordagem Multidisciplinar",
@@ -34,7 +34,7 @@ export default function BenefitsSection( ) {
   ];
 
   return (
-   <section className="benefits-section bg-white">
+    <section className="benefits-section py-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cinza-escuro">
@@ -46,14 +46,14 @@ export default function BenefitsSection( ) {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {benefits.map((benefit, index ) => (
+          {benefits.map((benefit, index) => (
             <div 
               key={index} 
               className="rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-102 flex flex-col h-full"
               style={{
-                backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${benefit.bgImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundColor: '#ffffff',
+                borderTop: '4px solid #4CAF50',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
               }}
             >
               <div className="p-8">
