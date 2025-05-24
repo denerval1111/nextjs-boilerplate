@@ -34,7 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       margin: 0,
       padding: 0,
       overflow: 'hidden', // Vírgula aqui é essencial
-      marginBottom: '-1px' /* Elimina qualquer gap entre seções */
+      marginBottom: '-5px' // Valor mais agressivo para garantir que não haja espaço
     }}
   >
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
