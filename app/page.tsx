@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import PillarsSection from '@/components/PillarsSection';
@@ -8,7 +7,7 @@ import BenefitsSection from '@/components/BenefitsSection';
 export default function HomePage() {
   return (
     <>
-      <Header />
+      {/* Header removido conforme solicitado */}
       <HeroSection 
         title="Envelheça com Vitalidade: Transforme sua Saúde em 30 Dias"
         subtitle="Um programa multidisciplinar baseado em ciência para longevidade saudável"
@@ -21,5 +20,5 @@ export default function HomePage() {
       <BenefitsSection />
       <PillarsSection />
     </>
-  );
+   );
 }
