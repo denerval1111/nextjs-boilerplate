@@ -18,17 +18,28 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   secondaryCtaText,
   secondaryCtaLink,
   backgroundImage = "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&auto=format&fit=crop", // URL externa padrão
-}) => {
+} ) => {
   // Garantir que sempre temos uma imagem de fundo, mesmo se não for passada
   const bgImage = backgroundImage || "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&auto=format&fit=crop";
   
   return (
-  <div className="hero-section w-full relative" style={{ 
-  margin: 0, 
-  padding: 0,
-  backgroundColor: '#333333' /* Cor que combina com a borda da imagem */
-}}
-    >
+    <div className="hero-section w-full relative" style={{ 
+      margin: 0, 
+      padding: 0,
+      backgroundColor: '#333333' /* Cor que combina com a borda da imagem */
+    }}>
+      {/* Container externo com altura fixa */}
+      <div 
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '100vh',
+          minHeight: '600px',
+          margin: 0,
+          padding: 0,
+          overflow: 'hidden'
+        }}
+      >
         {/* Imagem de fundo com posição absoluta para cobrir todo o container */}
         <div 
           style={{
@@ -37,7 +48,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5 ), rgba(0, 0, 0, 0.5)), url(${bgImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
