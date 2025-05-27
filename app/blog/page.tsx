@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '@/components/Header';
+
 import Footer from '@/components/Footer';
 
 export default function BlogPage() {
   return (
     <>
-      <Header />
+     
       <main className="min-h-screen py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
