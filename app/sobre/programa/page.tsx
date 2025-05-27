@@ -122,5 +122,4 @@ export default function ProgramaPage() {
       </section>
     </main>
   );
-}
 
