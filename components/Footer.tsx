@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   // Verificamos se o footer já foi renderizado para evitar duplicação
@@ -52,17 +51,14 @@ export default function Footer() {
             
             <h3 className="text-lg font-semibold mb-2">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <Link href="#" aria-label="Instagram">
-                <FaInstagram className="text-gray-600 hover:text-verde-vitalidade text-xl" />
+              <Link href="#" aria-label="Instagram" className="text-gray-600 hover:text-verde-vitalidade">
+                Instagram
               </Link>
-              <Link href="#" aria-label="Facebook">
-                <FaFacebook className="text-gray-600 hover:text-verde-vitalidade text-xl" />
+              <Link href="#" aria-label="Facebook" className="text-gray-600 hover:text-verde-vitalidade">
+                Facebook
               </Link>
-              <Link href="#" aria-label="YouTube">
-                <FaYoutube className="text-gray-600 hover:text-verde-vitalidade text-xl" />
-              </Link>
-              <Link href="#" aria-label="LinkedIn">
-                <FaLinkedin className="text-gray-600 hover:text-verde-vitalidade text-xl" />
+              <Link href="#" aria-label="YouTube" className="text-gray-600 hover:text-verde-vitalidade">
+                YouTube
               </Link>
             </div>
           </div>
