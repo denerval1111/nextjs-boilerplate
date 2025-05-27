@@ -23,10 +23,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-     <body className={inter.className}>
-  {children}
-  <Footer />
-</body>
+      <body className={inter.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
    );
 }
