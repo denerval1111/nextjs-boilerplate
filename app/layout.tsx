@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+// Remova a importação do Footer
+// import Footer from '@/components/Footer';
 import './globals.css';
 import '../responsive.css';
 
@@ -25,8 +25,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <Footer />
+        {/* Remova o Footer daqui */}
       </body>
     </html>
     );
 }
+
