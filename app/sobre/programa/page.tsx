@@ -1,4 +1,4 @@
-import React from 'react';
+iimport React from 'react';
 import Link from 'next/link';
 
 export default function ProgramaPage() {
@@ -28,8 +28,7 @@ export default function ProgramaPage() {
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Como Funciona</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md text-center relative">
-              {/* Número com tamanho reduzido */}
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 rounded-full bg-verde-vitalidade text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 1
               </div>
@@ -39,8 +38,7 @@ export default function ProgramaPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md text-center relative">
-              {/* Número com tamanho reduzido */}
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 rounded-full bg-verde-vitalidade text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 2
               </div>
@@ -50,61 +48,13 @@ export default function ProgramaPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md text-center relative">
-              {/* Número com tamanho reduzido */}
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="w-12 h-12 rounded-full bg-verde-vitalidade text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 3
               </div>
               <h3 className="text-xl font-bold mb-4">Acompanhamento Contínuo</h3>
               <p>
                 Após o período inicial, você receberá orientações para manter e aprimorar os resultados alcançados a longo prazo.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">O Que Está Incluído</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Plano Alimentar Personalizado</h3>
-              <p>
-                Baseado nas culinárias mediterrânea e asiática, adaptado às suas necessidades e preferências.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Protocolos de Exercícios</h3>
-              <p>
-                Atividades físicas adaptadas ao seu nível de condicionamento e objetivos específicos.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Técnicas de Saúde Mental</h3>
-              <p>
-                Práticas de mindfulness, gerenciamento de estresse e melhoria do sono.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Suporte da Comunidade</h3>
-              <p>
-                Acesso a um grupo exclusivo de participantes para compartilhar experiências e motivação.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Material Educativo</h3>
-              <p>
-                Vídeos, e-books e guias práticos sobre todos os aspectos do programa.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-3">Acompanhamento Profissional</h3>
-              <p>
-                Suporte de especialistas para esclarecer dúvidas e ajustar o programa conforme necessário.
               </p>
             </div>
           </div>
@@ -122,4 +72,6 @@ export default function ProgramaPage() {
       </section>
     </main>
   );
+}
+
 
