@@ -1,17 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
-  // Verificamos se o footer já foi renderizado para evitar duplicação
-  const footerId = 'main-footer';
-  
-  // Se já existir um footer com este ID no DOM, não renderizamos outro
-  if (typeof window !== 'undefined' && document.getElementById(footerId)) {
-    return null;
-  }
-  
   return (
-    <footer id={footerId} className="bg-white border-t border-gray-200 pt-12 pb-8">
+    <footer className="bg-white border-t border-gray-200 pt-12 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
@@ -51,14 +44,17 @@ export default function Footer() {
             
             <h3 className="text-lg font-semibold mb-2">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <Link href="#" aria-label="Instagram" className="text-gray-600 hover:text-verde-vitalidade">
-                Instagram
+              <Link href="#" aria-label="Instagram">
+                <FaInstagram className="text-gray-600 hover:text-verde-vitalidade text-xl" />
               </Link>
-              <Link href="#" aria-label="Facebook" className="text-gray-600 hover:text-verde-vitalidade">
-                Facebook
+              <Link href="#" aria-label="Facebook">
+                <FaFacebook className="text-gray-600 hover:text-verde-vitalidade text-xl" />
               </Link>
-              <Link href="#" aria-label="YouTube" className="text-gray-600 hover:text-verde-vitalidade">
-                YouTube
+              <Link href="#" aria-label="YouTube">
+                <FaYoutube className="text-gray-600 hover:text-verde-vitalidade text-xl" />
+              </Link>
+              <Link href="#" aria-label="LinkedIn">
+                <FaLinkedin className="text-gray-600 hover:text-verde-vitalidade text-xl" />
               </Link>
             </div>
           </div>
