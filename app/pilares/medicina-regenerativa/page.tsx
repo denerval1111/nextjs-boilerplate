@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Footer from '@/components/Footer';
+
 
 export default function MedicinaRegenerativaPage() {
   return (
@@ -71,7 +71,7 @@ export default function MedicinaRegenerativaPage() {
           </div>
         </div>
       </main>
-      <Footer />
+     
     </>
   );
 }
