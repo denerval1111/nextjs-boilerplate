@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Footer from '@/components/Footer';
+
 
 export default function ProgramaPage() {
   return (
@@ -70,7 +70,7 @@ export default function ProgramaPage() {
           </div>
         </section>
       </main>
-      <Footer />
+     
     </>
   );
 }
