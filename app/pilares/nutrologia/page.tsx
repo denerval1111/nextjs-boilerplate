@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Footer from '@/components/Footer';
+
 
 export default function NutrologiaPage() {
   return (
@@ -71,7 +71,7 @@ export default function NutrologiaPage() {
           </div>
         </div>
       </main>
-      <Footer />
+     
     </>
   );
 }
