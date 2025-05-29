@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Footer from '@/components/Footer';
 
 export default function SaudeMentalPage() {
   return (
@@ -71,7 +70,7 @@ export default function SaudeMentalPage() {
           </div>
         </div>
       </main>
-      <Footer />
+     
     </>
   );
 }
