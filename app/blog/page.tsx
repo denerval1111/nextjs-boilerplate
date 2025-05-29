@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Footer from '@/components/Footer';
 
 export default function BlogPage() {
   return (
@@ -63,7 +62,7 @@ export default function BlogPage() {
           </div>
         </div>
       </main>
-      <Footer />
+     
     </>
   );
 }
