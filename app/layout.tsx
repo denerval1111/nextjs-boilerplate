@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'; // Descomente esta linha
 import './globals.css';
 import '../responsive.css';
 import '../imagens-responsivas.css';
+import '../tipografia-padrao.css'; 
 
 const inter = Inter({ subsets: ['latin'] });
 
