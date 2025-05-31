@@ -34,6 +34,9 @@
   border-top: 4px solid #2E8B57; /* Verde Vitalidade */
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Aumentar largura mínima para tornar mais retangular */
+  min-width: 400px;
+  height: auto;
 }
 
 .secao-card:hover {
@@ -58,26 +61,53 @@
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  /* Centralizar melhor na página */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 /* Variante para cards de seção lado a lado */
 .secoes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* Ajustar para 2 colunas fixas para manter proporção retangular */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  /* Centralizar melhor na página */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 /* Cards container específico para benefícios */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* Ajustar para 2 colunas fixas para manter proporção retangular */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  /* Centralizar melhor na página */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 /* Media queries para responsividade */
+@media (max-width: 992px) {
+  .secao-card {
+    min-width: auto;
+  }
+  
+  .secoes-grid, .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .secao-card {
     padding: 1.5rem;
@@ -87,13 +117,10 @@
     font-size: 1.4rem;
   }
   
-  .secoes-grid, .cards-container {
-    grid-template-columns: 1fr;
-  }
-  
   .btn-primary {
     width: 100%;
     padding: 0.75rem 1rem;
   }
 }
+
 
