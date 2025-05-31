@@ -5,6 +5,7 @@ import './globals.css';
 import '../responsive.css';
 import '../imagens-responsivas.css';
 import '../tipografia-padrao.css'; 
+import '../secoes-cards.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
